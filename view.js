@@ -27,8 +27,10 @@
       link = document.createElement('a');
       link.innerHTML = num;
       link.setAttribute("href", links[num]);
+      viewbox.appendChild(link);
     }
-    
+   
+    document.body.appendChild(viewbox);
   };
 
   loadStyles = function() {
