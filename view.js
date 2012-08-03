@@ -1,19 +1,6 @@
 (function() {
   var checkContext, checkRequirements, loadLinks, loadStyles, loadUI,
-    __hasProp = Object.prototype.hasOwnProperty;
-
-  checkRequirements = function() {
-    try {
-      return window.localStorage && window['localStorage'] !== null;
-    } catch (error) {
-      return false;
-    }
-    return true;
-  };
-
-  checkContext = function() {
-  };
-
+ 
   loadLinks = function() {
     var anchor, count, data, found, hideThreshhold, index, opacity, record, url, _len, _ref;
     found = [];
@@ -60,7 +47,7 @@
 
   var links = [];
   links = loadLinks();
-  loadUI();
+  loadUI(links);
   loadStyles();
 
 }).call(this);
