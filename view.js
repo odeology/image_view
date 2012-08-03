@@ -11,7 +11,7 @@
       url = anchor.getAttribute("href");
       if (!url || url.length === 0) continue;
       if (url.indexOf(leader) !== 0) continue;
-      url.replace(leader, '/media/gals/');
+      url = url.replace(leader, '/media/gals/');
       found.push(url);
     }
     return found;
